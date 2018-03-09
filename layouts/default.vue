@@ -1,15 +1,8 @@
 <template>
   <v-app dark>
-    <!-- <v-navigation-drawer
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      v-model="drawer"
-      fixed
-      app
-    > -->
     <v-navigation-drawer
       :mini-variant="miniVariant"
-      
+      :clipped="clipped"
       v-model="drawer"
       fixed
       app
@@ -91,11 +84,20 @@
     data() {
       return {
         clipped: false,
-        drawer: true,
+        drawer: false,
         fixed: false,
         items: [
           { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' }
+          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
+          { icon: 'apps', title: 'Accueil', to: '/accueil' },
+          { icon: 'apps', title: 'Expositions', to: '/expositions' },
+          { icon: 'apps', title: 'Événements', to: '/events' },
+          { icon: 'apps', title: 'Musée', to: '/museum' },
+          { icon: 'apps', title: 'Collections', to: '/collections' },
+          { icon: 'apps', title: 'Association', to: '/association' },
+          { icon: 'apps', title: 'Blog', to: '/blog' },
+          { icon: 'apps', title: 'Contact', to: '/contact' },
+          { icon: 'apps', title: 'Login', to: '/login' }
         ],
         miniVariant: false,
         right: true,
