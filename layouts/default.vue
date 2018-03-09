@@ -1,8 +1,15 @@
 <template>
   <v-app dark>
-    <v-navigation-drawer
+    <!-- <v-navigation-drawer
       :mini-variant="miniVariant"
       :clipped="clipped"
+      v-model="drawer"
+      fixed
+      app
+    > -->
+    <v-navigation-drawer
+      :mini-variant="miniVariant"
+      
       v-model="drawer"
       fixed
       app
