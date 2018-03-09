@@ -12,3 +12,6 @@ dist
 
 # Idea Webstorm
 *.idea
+
+# SSH data
+.ssh
